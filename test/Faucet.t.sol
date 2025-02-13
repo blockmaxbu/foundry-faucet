@@ -21,10 +21,9 @@ contract FaucetTest is Test {
         vm.stopBroadcast();
     }
 
-
     function test_withdrawTooLarge() public {
         vm.prank(testUser);
-        vm.expectRevert(Faucet.Faucet__amountTooLarge);
+        vm.expectRevert(Faucet.Faucet__amountTooLarge.selector);
         faucet.withdraw(10 ether);
     }
 
@@ -38,8 +37,7 @@ contract FaucetTest is Test {
     function test_rateLimit() public {
         vm.prank(testUser);
         faucet.withdraw(0.01 ether);
-        vm.expectRevert(Faucet.Faucet__rateLimt);
+        vm.expectRevert(Faucet.Faucet__rateLimit.selector);
         faucet.withdraw(0.01 ether);
     }
-
 }

@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 contract Faucet {
 
     error Faucet__amountTooLarge();
-    error Faucet__rateLimt();
+    error Faucet__rateLimit();
 
     event Withdrawal(address indexed to, uint amount);
 
@@ -18,7 +18,7 @@ contract Faucet {
             revert Faucet__amountTooLarge();
         }
         if(block.timestamp < lastAccessTime[msg.sender] + 1 days) {
-            revert Faucet__rateLimt();
+            revert Faucet__rateLimit();
         }
         payable(msg.sender).transfer(withdraw_amount);
         lastAccessTime[msg.sender] = block.timestamp;
