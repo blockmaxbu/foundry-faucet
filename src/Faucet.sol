@@ -25,5 +25,8 @@ contract Faucet {
         emit Withdrawal(msg.sender, withdraw_amount);
     }
 
+    /**
+     * @notice Receive ether， people can send ether that they are not gonna use to this contract
+     */
     receive() external payable {}
 }
