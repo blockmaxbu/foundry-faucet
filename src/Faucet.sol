@@ -17,11 +17,11 @@ contract Faucet {
         if (withdraw_amount > 0.1 ether) {
             revert Faucet__amountTooLarge();
         }
-        if(block.timestamp < lastAccessTime[msg.sender] + 1 days) {
+        if(block.timestamp > lastAccessTime[msg.sender] + 1 days) {
             revert Faucet__rateLimit();
         }
-        payable(msg.sender).transfer(withdraw_amount);
         lastAccessTime[msg.sender] = block.timestamp;
+        payable(msg.sender).transfer(withdraw_amount);
         emit Withdrawal(msg.sender, withdraw_amount);
     }
 
