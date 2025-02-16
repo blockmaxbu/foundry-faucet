@@ -1,0 +1,2 @@
+FaucetTest:test_withdraw(uint256) (runs: 257, μ: 92602, ~: 91951)
+FaucetTest:test_withdrawTooLarge() (gas: 10742)

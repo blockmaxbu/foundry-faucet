@@ -1,0 +1,171 @@
+Compiling 27 files with Solc 0.8.28
+Solc 0.8.28 finished in 1.13s
+Compiler run successful!
+Analysing contracts...
+Running tests...
+
+Ran 2 tests for test/Faucet.t.sol:FaucetTest
+[PASS] test_withdraw(uint256) (runs: 257, μ: 96194, ~: 94725)
+[PASS] test_withdrawTooLarge() (gas: 11591)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 15.32ms (14.88ms CPU time)
+
+Ran 1 test suite in 102.10ms (15.32ms CPU time): 2 tests passed, 0 failed, 0 skipped (2 total tests)
+Uncovered for script/Deploy.s.sol:
+
+Uncovered for src/Faucet.sol:
+- Branch (branch: 1, path: 0) (location: source ID 25, lines 21..24, bytes 553..604, hits: 0)
+- Line (location: source ID 25, lines 22..23, bytes 567..593, hits: 0)
+- Statement (location: source ID 25, lines 22..23, bytes 567..593, hits: 0)
+
+Anchors for Contract "StdCheats" (solc 0.8.28, source ID 4):
+
+Anchors for Contract "console" (solc 0.8.28, source ID 15):
+
+Anchors for Contract "Vm" (solc 0.8.28, source ID 14):
+
+Anchors for Contract "StdStyle" (solc 0.8.28, source ID 10):
+
+Anchors for Contract "Deploy" (solc 0.8.28, source ID 24):
+- IC 56 -> Item 0
+- Creation code
+  - Refers to item: Line (location: source ID 24, lines 13..24, bytes 211..522, hits: 2)
+- IC 56 -> Item 1
+- Creation code
+  - Refers to item: Function "run" (location: source ID 24, lines 13..24, bytes 211..522, hits: 2)
+- IC 153 -> Item 2
+- Creation code
+  - Refers to item: Line (location: source ID 24, lines 17..18, bytes 405..424, hits: 2)
+- IC 153 -> Item 3
+- Creation code
+  - Refers to item: Statement (location: source ID 24, lines 17..18, bytes 405..424, hits: 2)
+- IC 243 -> Item 4
+- Creation code
+  - Refers to item: Line (location: source ID 24, lines 19..20, bytes 435..463, hits: 2)
+- IC 243 -> Item 5
+- Creation code
+  - Refers to item: Statement (location: source ID 24, lines 19..20, bytes 435..463, hits: 2)
+- IC 244 -> Item 6
+- Creation code
+  - Refers to item: Statement (location: source ID 24, lines 19..20, bytes 451..463, hits: 2)
+- IC 319 -> Item 7
+- Creation code
+  - Refers to item: Line (location: source ID 24, lines 21..22, bytes 474..492, hits: 2)
+- IC 319 -> Item 8
+- Creation code
+  - Refers to item: Statement (location: source ID 24, lines 21..22, bytes 474..492, hits: 2)
+- IC 409 -> Item 9
+- Creation code
+  - Refers to item: Line (location: source ID 24, lines 22..23, bytes 502..515, hits: 2)
+- IC 409 -> Item 10
+- Creation code
+  - Refers to item: Statement (location: source ID 24, lines 22..23, bytes 502..515, hits: 2)
+
+Anchors for Contract "stdError" (solc 0.8.28, source ID 5):
+
+Anchors for Contract "IMulticall3" (solc 0.8.28, source ID 17):
+
+Anchors for Contract "stdStorageSafe" (solc 0.8.28, source ID 9):
+
+Anchors for Contract "StdInvariant" (solc 0.8.28, source ID 6):
+
+Anchors for Contract "StdChains" (solc 0.8.28, source ID 3):
+
+Anchors for Contract "Script" (solc 0.8.28, source ID 1):
+
+Anchors for Contract "StdCheatsSafe" (solc 0.8.28, source ID 4):
+
+Anchors for Contract "VmSafe" (solc 0.8.28, source ID 14):
+
+Anchors for Contract "TestBase" (solc 0.8.28, source ID 0):
+
+Anchors for Contract "SafeCast" (solc 0.8.28, source ID 22):
+
+Anchors for Contract "ScriptBase" (solc 0.8.28, source ID 0):
+
+Anchors for Contract "stdToml" (solc 0.8.28, source ID 11):
+
+Anchors for Contract "StdAssertions" (solc 0.8.28, source ID 2):
+
+Anchors for Contract "Math" (solc 0.8.28, source ID 21):
+
+Anchors for Contract "FaucetTest" (solc 0.8.28, source ID 26):
+
+Anchors for Contract "Test" (solc 0.8.28, source ID 13):
+
+Anchors for Contract "stdStorage" (solc 0.8.28, source ID 9):
+
+Anchors for Contract "stdJson" (solc 0.8.28, source ID 7):
+
+Anchors for Contract "StdUtils" (solc 0.8.28, source ID 12):
+
+Anchors for Contract "SignedMath" (solc 0.8.28, source ID 23):
+
+Anchors for Contract "Strings" (solc 0.8.28, source ID 20):
+
+Anchors for Contract "Panic" (solc 0.8.28, source ID 19):
+
+Anchors for Contract "CommonBase" (solc 0.8.28, source ID 0):
+
+Anchors for Contract "stdMath" (solc 0.8.28, source ID 8):
+
+Anchors for Contract "Faucet" (solc 0.8.28, source ID 25):
+- IC 44 -> Item 11
+- Creation code
+  - Refers to item: Line (location: source ID 25, lines 16..28, bytes 316..773, hits: 258)
+- IC 44 -> Item 12
+- Creation code
+  - Refers to item: Function "withdraw" (location: source ID 25, lines 16..28, bytes 316..773, hits: 258)
+- IC 85 -> Item 13
+- Creation code
+  - Refers to item: Line (location: source ID 25, lines 17..18, bytes 377..404, hits: 258)
+- IC 85 -> Item 14
+- Creation code
+  - Refers to item: Statement (location: source ID 25, lines 17..18, bytes 377..404, hits: 258)
+- IC 101 -> Item 15
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 25, lines 17..20, bytes 406..462, hits: 1)
+- IC 101 -> Item 16
+- Creation code
+  - Refers to item: Line (location: source ID 25, lines 18..19, bytes 420..451, hits: 1)
+- IC 101 -> Item 17
+- Creation code
+  - Refers to item: Statement (location: source ID 25, lines 18..19, bytes 420..451, hits: 1)
+- IC 151 -> Item 18
+- Creation code
+  - Refers to item: Line (location: source ID 25, lines 21..22, bytes 498..551, hits: 257)
+- IC 151 -> Item 19
+- Creation code
+  - Refers to item: Statement (location: source ID 25, lines 21..22, bytes 498..551, hits: 257)
+- IC 151 -> Item 20
+- Creation code
+  - Refers to item: Statement (location: source ID 25, lines 21..22, bytes 516..551, hits: 257)
+- IC 233 -> Item 21
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 0) (location: source ID 25, lines 21..24, bytes 553..604, hits: 0)
+- IC 233 -> Item 22
+- Creation code
+  - Refers to item: Line (location: source ID 25, lines 22..23, bytes 567..593, hits: 0)
+- IC 233 -> Item 23
+- Creation code
+  - Refers to item: Statement (location: source ID 25, lines 22..23, bytes 567..593, hits: 0)
+- IC 283 -> Item 24
+- Creation code
+  - Refers to item: Line (location: source ID 25, lines 24..25, bytes 613..657, hits: 257)
+- IC 283 -> Item 25
+- Creation code
+  - Refers to item: Statement (location: source ID 25, lines 24..25, bytes 613..657, hits: 257)
+- IC 348 -> Item 26
+- Creation code
+  - Refers to item: Line (location: source ID 25, lines 25..26, bytes 667..712, hits: 257)
+- IC 348 -> Item 27
+- Creation code
+  - Refers to item: Statement (location: source ID 25, lines 25..26, bytes 667..712, hits: 257)
+- IC 416 -> Item 28
+- Creation code
+  - Refers to item: Line (location: source ID 25, lines 26..27, bytes 722..766, hits: 257)
+- IC 416 -> Item 29
+- Creation code
+  - Refers to item: Statement (location: source ID 25, lines 26..27, bytes 722..766, hits: 257)
+
+Anchors for Contract "safeconsole" (solc 0.8.28, source ID 18):
+

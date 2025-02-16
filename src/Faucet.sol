@@ -17,6 +17,7 @@ contract Faucet {
         if (withdraw_amount > 0.1 ether) {
             revert Faucet__amountTooLarge();
         }
+        // once per day
         if(block.timestamp > lastAccessTime[msg.sender] + 1 days) {
             revert Faucet__rateLimit();
         }

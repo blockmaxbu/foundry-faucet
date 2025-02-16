@@ -11,6 +11,9 @@ contract Deploy is Script {
     }
 
     function run() public returns (Faucet) {
+        // string memory privateKey = vm.envString("PRIVATE_KEY"); // load private_key from .env file
+
+        // vm.startBroadcast(privateKey);
         vm.startBroadcast();
 
         Faucet faucet = new Faucet();
