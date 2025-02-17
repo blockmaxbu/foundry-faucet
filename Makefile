@@ -22,5 +22,6 @@ snapshot :; forge snapshot
 format :; forge fmt
 
 deploy:
-    @echo $(TESTNET_RPC_URL)
-    @forge script script/Deploy.s.sol --rpc-url $(TESTNET_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast
+	@echo "Deploying..."
+	@echo $(TESTNET_RPC_URL)
+	@forge script script/Deploy.s.sol --rpc-url $(TESTNET_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast
